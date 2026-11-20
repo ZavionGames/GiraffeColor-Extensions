@@ -1,0 +1,62 @@
+* { box-sizing: border-box }
+body { margin: 0; width: 356px; background: #faf9f5; color: #23241e; font: 14px "Segoe UI", sans-serif }
+header { display: flex; align-items: center; gap: 9px; padding: 16px 20px; border-bottom: 1px solid #dddcd4 }
+h1 { margin: 0; font-size: 22px; letter-spacing: -1.2px }
+main { padding: 16px 20px 8px }
+button, select { font: inherit; color: inherit; cursor: pointer }
+button { border: 0; background: none }
+:focus-visible { outline: 3px solid #4765d8; outline-offset: 2px }
+#sample { position: relative; isolation: isolate; overflow: hidden; border-radius: 15px; padding: 66px 18px 17px; background: #ff805e }
+.rings { position: absolute; z-index: -1; inset: 0; opacity: .16; background: repeating-radial-gradient(circle at 110% -36%, transparent 0 20px, currentColor 21px, transparent 22px 38px) }
+.caption { font-size: 12px; font-weight: 600 }
+#hex { display: block; font: 700 33px/1.2 Consolas, monospace; letter-spacing: -1.8px }
+#save { position: absolute; right: 12px; top: 12px; border: 1px solid currentColor; border-radius: 50%; width: 32px; height: 32px; line-height: 1; font-size: 22px }
+#pick { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin: 10px 0 20px; padding: 10px; border-radius: 10px; color: white; background: #24251f; font-weight: 650 }
+#pick:hover { background: #393b31 }
+.row,.field,.tabs { display: flex; align-items: center; justify-content: space-between }
+h2,.tabs button { font-size: 14px; font-weight: 650; margin: 0 }
+select { border: 1px solid #d5d5ca; border-radius: 6px; padding: 3px; background: #fff; font-size: 12px }
+.field { background: white; border: 1px solid #dcdcd2; border-radius: 9px; padding: 8px 9px 8px 12px; margin: 8px 0 19px }
+output { font: 14px Consolas, monospace; user-select: all }
+#copy { background: #efefe9; font-size: 12px; padding: 7px 10px; border-radius: 5px }
+.tabs { gap: 14px }
+.tabs button { padding: 3px 0 5px; color: #66685e; border-bottom: 2px solid transparent }
+.tabs [aria-pressed=true] { color: #23241e; border-color: currentColor }
+small,#swatches p,#status { color: #66685e; font-size: 12px }
+#swatches { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 3px; max-height: 90px; overflow-y: auto; padding: 3px }
+#swatches p { margin: 4px 0 }
+.chip { width: 29px; height: 29px; border-radius: 8px; border: 1px solid #0003 }
+#status { min-height: 18px; padding-top: 3px }
+[hidden] { display: none !important }
+body { width: 376px; max-height: 590px; overflow-y: auto }
+#sample { padding-top: 40px }
+#collections,.pair,.actions,.chips { display: flex; align-items: center; gap: 7px }
+#collections { justify-content: space-between; margin-top: 13px }
+#collections select { max-width: 150px }
+#collections label, dialog label { color: #56574e; font-size: 12px }
+#export,#scan,.pair button,.actions button { background: #ecece4; padding: 7px 10px; border-radius: 7px; font-size: 12px }
+button:disabled { opacity: .5; cursor: default }
+#swatches { color: #65665c; font-size: 12px }
+.named-chip { background: white; border: 1px solid #dddcd4; border-left: 12px solid; border-radius: 6px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 5px 8px }
+details { margin-top: 8px; padding: 9px 12px; border: 1px solid #dcdcd2; background: white; border-radius: 9px }
+summary { cursor: pointer; font-weight: 600 }
+details[open] summary { margin-bottom: 9px }
+.chips { flex-wrap: wrap; margin: 6px 0 }
+.pair button { flex: 1; border-bottom: 4px solid }
+#preview { margin: 8px 0; border-radius: 7px; padding: 12px; font-weight: 600; text-align: center }
+#ratio { font: 12px "Segoe UI",sans-serif }
+dialog { width: 300px; border: 1px solid #d8d7cc; border-radius: 14px; padding: 20px; background: #faf9f5 }
+dialog::backdrop { background: #2225 }
+dialog label { display: grid; gap: 4px; margin: 12px 0 }
+dialog input,dialog select { min-width: 0; width: 100%; border: 1px solid #cfcec5; padding: 7px; border-radius: 6px; background: white; font: inherit }
+.actions { justify-content: flex-end }
+.actions .primary { background: #24251f; color: white }
+#remove { margin-right: auto }
+.pick-actions {display:grid;grid-template-columns:3fr 2fr;gap:8px;margin:10px 0 20px}
+.pick-actions #pick {margin:0}
+#series {border:1px solid #bcb7a6;border-radius:10px;background:#f2ebd4;font-weight:650}
+#clearHistory {font-size:12px;text-decoration:underline;color:#68544a;padding:5px 0}
+#batchNames {max-height:160px;overflow:auto}
+#batchNames label {border-left:7px solid;padding-left:7px}
+
+.privacy-link { margin-left: auto; color: #515341; font-size: 12px; text-underline-offset: 3px; }

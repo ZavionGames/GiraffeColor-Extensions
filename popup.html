@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Giraffe Color</title>
+  <link rel="stylesheet" href="popup.css">
+  <script defer src="scan.js"></script>
+  <script defer src="pencil.js"></script>
+  <script defer src="popup.js"></script>
+</head>
+<body>
+  <header><img src="icon.png" width="32" height="32" alt=""><h1>Giraffe Color</h1><a class="privacy-link" href="privacy.html" target="_blank" rel="noopener">Gizlilik politikası</a></header>
+  <main>
+    <section id="sample" aria-label="Renk önizlemesi">
+      <div class="rings" aria-hidden="true"></div>
+      <button id="save" aria-label="Palete ekle" title="Palete ekle">♡</button>
+      <div class="caption" id="label">Örnek renk</div>
+      <strong id="hex">#FF805E</strong>
+    </section>
+    <div class="pick-actions"><button id="pick">Tek renk seç</button><button id="series">Seri seç</button></div>
+    <section class="codes"><div class="row"><h2>Renk kodu</h2><select id="format" aria-label="Renk kodu biçimi"><option>HEX</option><option>RGB</option><option>HSL</option></select></div>
+      <div class="field"><output id="value"></output><button id="copy">Kopyala</button></div>
+    </section>
+    <section><div class="row"><div class="tabs"><button id="recent" aria-pressed="true">Geçmiş</button><button id="palette">Favoriler</button><button id="tools">Araçlar</button></div><small id="count"></small></div>
+      <div id="collections" hidden><label>Kategori <select id="group"></select></label><button id="export">CSS kopyala</button></div>
+      <div id="swatches"></div>
+      <button id="clearHistory" hidden>Geçmişi temizle</button>
+      <button id="saveBatch" hidden>Seriyi favorilere ekle</button>
+    </section>
+    <section id="toolbox" hidden>
+      <details><summary>Sayfa renkleri</summary><button id="scan">Görünür alanı tara</button><div id="pageColors" class="chips"></div><small id="scanInfo" role="status"></small></details>
+      <details><summary>Açık ve koyu tonlar</summary><div id="tones" class="chips"></div></details>
+      <details><summary>Kontrast kontrolü</summary>
+        <div class="pair"><button id="ink"></button><button id="paper"></button></div>
+        <div id="preview">Örnek metin</div><output id="ratio"></output>
+      </details>
+    </section>
+    <div id="status" role="status"></div>
+    <dialog id="editor"><form id="favoriteForm"><h2 id="editTitle">Favoriyi düzenle</h2>
+      <label id="singleName">Renk adı<input id="nickname" maxlength="60" placeholder="Örn. Ana renk"></label>
+      <div id="batchNames" hidden></div>
+      <label>Kategori<select id="destination"></select></label>
+      <label id="newGroupLabel" hidden>Yeni kategori adı<input id="newGroup" maxlength="40"></label>
+      <div class="actions"><button type="button" id="remove">Kaldır</button><button type="button" id="cancel">Vazgeç</button><button class="primary">Kaydet</button></div>
+    </form></dialog>
+  </main>
+</body>
+</html>
