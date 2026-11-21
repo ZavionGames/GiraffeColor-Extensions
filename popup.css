@@ -60,3 +60,5 @@ dialog input,dialog select { min-width: 0; width: 100%; border: 1px solid #cfcec
 #batchNames label {border-left:7px solid;padding-left:7px}
 
 .privacy-link { margin-left: auto; color: #515341; font-size: 12px; text-underline-offset: 3px; }
+
+.capture-note { margin: 10px 0; color: #555648; font-size: 12px; line-height: 1.4; }

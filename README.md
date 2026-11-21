@@ -2,7 +2,7 @@
 
 Giraffe Color, web sayfasında gördüğün bir pikselin rengini alıp projelerinde kullanabileceğin bir Chrome eklentisidir. Kalemle renk seçebilir, kodunu kopyalayabilir ve adlandırdığın renkleri proje kategorilerinde saklayabilirsin.
 
-**Sürüm 1.3.1** · Masaüstü Chrome 99 ve üzeri · Manifest V3 · Derleme veya bağımlılık kurulumu gerekmez.
+**Sürüm 1.3.2** · Masaüstü Chrome 99 ve üzeri · Manifest V3 · Derleme veya bağımlılık kurulumu gerekmez.
 
 ## Kurulum ve güncelleme
 
